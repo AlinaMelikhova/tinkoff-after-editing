@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+  max-width: 767px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.table-heading {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  color: #000000;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.mobile-table {
+  display: block;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.mobile-table__section {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+.mobile-table__row {
+  display: table-row;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+.mobile-table__key {
+  max-width: 60%;
+  padding-right: 10px;
+  display: table-cell;
+  position: relative;
+  vertical-align: baseline;
+  font-size: 14px;
+  line-height: 20px;
+  box-sizing: border-box;
+}
+
+.bold {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+.mobile-table__value {
+  width: 40%;
+  padding-bottom: 8px;
+  padding-top: 0;
+  display: table-cell;
+  padding: 4px 0;
+  position: relative;
+  vertical-align: baseline;
+  font-size: 14px;
+  line-height: 20px;
+  box-sizing: border-box;
+}
+
+.ruble {
+  position: relative;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.ruble--big {
+  position: relative;
+}
+
+.ruble::before {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 0.8px;
+  background-color: #000000;
+  top: 10.5px;
+  left: -1px;
+}
+
+.ruble--big::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 1.5px;
+  background-color: #000000;
+  top: 18px;
+  left: -1px;
+}
